@@ -24,7 +24,7 @@ jobs:
     - name: git clone vyos-kernel-build
       run: |
         set -eux
-        sudo apt-get --install-recommends install pciutils
+        sudo apt-get --install-recommends install pciutils yasm
          git clone -b dev  https://github.com/debiansid/vyos-kernel-lts-build linux-kernel
          
          
