@@ -48,6 +48,8 @@ jobs:
         ./build-intel-qat.sh
     - name: make wirgeguard deb
       run: |
+        set -eux
+        pwd
         git clone https://salsa.debian.org/debian/wireguard-linux-compat.git
         cd wireguard-linux-compat
         git checkout debian/1.0.20210606-1
@@ -55,6 +57,8 @@ jobs:
         ./build-wireguard-modules.sh
     - name: make Accel-PPP deb
       run: |
+        set -eux
+        pwd
         git clone https://github.com/accel-ppp/accel-ppp.git
         ./build-accel-ppp.sh
     - name: ls
