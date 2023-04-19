@@ -57,6 +57,7 @@ jobs:
         cd ../
         set -eux
         pwd
+        chmod +x build-wireguard-modules.sh
         ./build-wireguard-modules.sh
     - name: make Accel-PPP deb
       run: |
