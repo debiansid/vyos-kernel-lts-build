@@ -50,6 +50,7 @@ jobs:
       run: |
         set -eux
         pwd
+        cd linux-kernel
         git clone https://salsa.debian.org/debian/wireguard-linux-compat.git
         cd wireguard-linux-compat
         git checkout debian/1.0.20210606-1
