@@ -55,9 +55,6 @@ jobs:
         cd wireguard-linux-compat
         git checkout debian/1.0.20210606-1
         cd ../
-        set -eux
-        pwd
-        chmod +x build-wireguard-modules.sh
         ./build-wireguard-modules.sh
     - name: make Accel-PPP deb
       run: |
