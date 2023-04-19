@@ -27,4 +27,4 @@ do
 done
 
 echo "I: Build Debian WireGuard package"
-KERNELDIR=$KERNEL_DIR dpkg-buildpackage -b -us -uc -tc
+KERNELDIR=$KERNEL_DIR dpkg-buildpackage -b -us -uc -tc -d
