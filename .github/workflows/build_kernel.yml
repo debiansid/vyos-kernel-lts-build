@@ -35,9 +35,9 @@ jobs:
         pwd
 
         cd linux-kernel
-        wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.4.255.tar.xz
-        tar xf linux-5.4.255.tar.xz
-        ln -s linux-5.4.255 linux
+        wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.4.261.tar.xz
+        tar xf linux-5.4.261.tar.xz
+        ln -s linux-5.4.261 linux
         ./build-kernel.sh
         rm *dev*.deb
     - name: make intel-qat deb
